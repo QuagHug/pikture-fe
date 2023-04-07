@@ -8,7 +8,7 @@ const Search = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get(process.env.PIKTURE_API_URL + "api/Post/search", {
+      const response = await axios.get(process.env.REACT_APP_PIKTURE_API_URL + "api/Post/search", {
         params: {
             key: props.searchKey
         }
