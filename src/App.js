@@ -2,9 +2,7 @@ import { useEffect } from "react"
 import { Routes, Route, useNavigate } from "react-router-dom"
 import Login from "./container/Login";
 import Home from "./container/Home";
-// import dotenv from "dotenv"
 
-// dotenv.config();
 
 function App() {
 
