@@ -14,9 +14,6 @@
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 11px;
-    padding-left: 14px;
-    padding-right: 14x;
     cursor: pointer;
     margin-left: 10px;
     transform: translate(0, 1px);
@@ -35,7 +32,11 @@
     transform: translate(0%, 40%);
 }
 
-
+.addButtonContainer {
+    padding: 11px;
+    padding-left: 14px;
+    padding-right: 14x;
+}
 
 
 @media screen and (max-width: 768px) {

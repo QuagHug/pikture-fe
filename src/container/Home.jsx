@@ -42,7 +42,9 @@ const Home = () => {
           <Searchbar handleSearch={handleSearch}/>
           <img id="userImg" src="https://lh3.googleusercontent.com/a/AGNmyxaZMGx1RzBGuAw188oPsZwHk1KbH5VGeIdJ57_V=s96-c" alt="" width="50x" height="50px" referrerPolicy="no-referrer"/>
           <Link className="addButton" to="create-post">
-            <HiPlusSm size={20} className="addImg"></HiPlusSm>
+            <div className="addButtonContainer">
+              <HiPlusSm size={20} className="addImg"></HiPlusSm>
+            </div>
           </Link>
         </div>
         <Routes>
