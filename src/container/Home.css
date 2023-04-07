@@ -17,6 +17,7 @@
     cursor: pointer;
     margin-left: 10px;
     transform: translate(0, 1px);
+    padding: 11px 14px;
 }
 
 .addImg {
@@ -33,9 +34,7 @@
 }
 
 .addButtonContainer {
-    padding: 11px;
-    padding-left: 14px;
-    padding-right: 14x;
+    
 }
 
 
