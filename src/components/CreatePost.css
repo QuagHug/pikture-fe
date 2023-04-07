@@ -1,0 +1,93 @@
+#CreatePost {
+    margin-left: 8%;
+    margin-right: 0;
+    margin-top: 40px;
+}
+
+.imageUpload {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 80px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.imageUploadContainer {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #000;
+    transform: translate(0, -100px);
+}
+
+.imageUpload::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+}
+
+
+.createPostInfo {
+    display: inline-block;
+    width: 30%;
+}
+
+.createPostInfo input {
+    display: block;
+    margin: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 80%;
+    border-style: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+
+.createPostInfo select {
+    display: block;
+    margin: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 80%;
+    border-style: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.uploadButton {
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: #6200EE;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadResultContainer {
+    color: #6200EE;
+    transform: translate(0, -50px);
+}
+
+@media screen and (max-width: 768px) {
+    .createPostInfo {
+        display: block;
+        width: 60%;
+    }
+
+    .imageUpload {
+        padding: 40px;
+        padding-right: 0;
+    }
+    .imageUploadContainer {
+        transform: none;
+    }
+    .createPostInfo input {
+        margin-left: 0;
+    }
+    .createPostInfo select {
+        margin-left: 0;
+    }
+    .uploadButton {
+        margin-left: 0;
+    }
+}

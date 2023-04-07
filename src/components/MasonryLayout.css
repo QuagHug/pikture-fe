@@ -1,0 +1,8 @@
+.masonryGrid {
+    display: flex;
+    width: auto;
+}
+
+.masonryGridColumn {
+    padding: 10px;
+}

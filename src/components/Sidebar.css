@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+}
+
+.Sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-width: 180px;
+    /* background-color: #6200EE; */
+    background-color: black;
+    height: 100%;
+    /* box-shadow: 2px 2px 2px 2px #3700B3; */
+    transition: 0.4s;
+    margin: 0;
+}
+
+.SidebarActive {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-width: 180px;
+    /* background-color: #6200EE; */
+    background-color: black;
+    height: 100%;
+    /* box-shadow: 2px 2px 2px 2px #3700B3; */
+    transition: 0.4s;
+    margin: 0;
+}
+
+#sidebarLogo {
+    margin: 0 auto;
+    transform: translate(-6%, 0%);
+}
+
+.homeLogo {
+    transform: translate(0%, 12%);
+    margin-right: 5px;
+}
+
+.sidebarText {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.navLink {
+    display: block;
+    color: white; 
+    text-decoration: none;
+    padding: 20px 0 20px 25px;
+    font-size: 15px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.navLink:hover {
+    transform: scale(1.031);
+    opacity: 1;
+}
+
+.activeNavLink {
+    display: block;
+    color: white; 
+    text-decoration: none;
+    padding: 20px 0 20px 25px;
+    font-size: 15px;
+    opacity: 1;
+    background-color: #6200EE;
+}
+
+#closeButton {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    top: 10px;
+    left: 90%;
+    border-radius: 5px;
+    background-color: #6200EE;
+    border-style: none;
+    display: none;
+}
+
+.logoutButton {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar {
+        position: absolute; 
+        left: -200px;
+    }
+    .SidebarActive {
+        position: absolute; 
+        left: 0px;
+        z-index: 0;
+    }
+    #closeButton {
+        display: initial;
+    }
+}

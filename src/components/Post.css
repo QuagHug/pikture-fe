@@ -1,0 +1,15 @@
+
+.postImg {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.postAvatarImg {
+    display: inline-block;
+}
+
+.postUserName {
+    display: inline-block;
+    margin-left: 10px;
+    transform: translate(0, -30%);
+}
