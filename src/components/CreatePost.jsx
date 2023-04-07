@@ -31,7 +31,7 @@ const CreatePost = () => {
     formData.append("title", document.querySelector('input[name="title"]').value);
     formData.append("category", document.querySelector('select[name="category"]').value);
     
-    axios.post("https://localhost:7280/api/Post", formData)
+    axios.post(process.env.PIKTURE_API_URL + "api/Post", formData)
       .then(response => {
         setUploadResult(response.data);
       })

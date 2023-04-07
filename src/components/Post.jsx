@@ -8,7 +8,7 @@ const Post = (props) => {
 
   useEffect(() => {
     const fetchImage = async () => {
-      const response = await axios.get(`https://localhost:7280/api/Post/${props.post.id}`, { responseType: 'blob' });
+      const response = await axios.get(process.env.PIKTURE_API_URL + `api/Post/${props.post.id}`, { responseType: 'blob' });
       setImageUrl(URL.createObjectURL(response.data));
     }
     fetchImage();

@@ -8,7 +8,7 @@ const Feed = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get("https://localhost:7280/api/Post");
+      const response = await axios.get(process.env.PIKTURE_API_URL + "api/Post");
       setPosts(response.data);
     }
     fetchPosts();
